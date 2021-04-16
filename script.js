@@ -1,10 +1,10 @@
 /* jQuery added via CodePen settings */
 $("#hide1").click(function(){
-    $("#dots").hide();
+    $("#dots!").hide();
 });
 
 $("#show1").click(function(){
-    $("#more dots").show();
+    $("#more dots!").show();
 });
 
 $("#toggle2").click(function(){
