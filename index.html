@@ -6,6 +6,10 @@
 	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<title>Sharlene Deng</title>
 	<link href="style.css" rel="stylesheet" type="text/css">
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </head>
 
@@ -15,8 +19,8 @@
          background:#010002;
 background-image: linear-gradient(475deg, #070707 0%, #240370 37%, #432eff 100%);
          height:100vh;
+         font-family: Trebuchet, Georgia, sans-serif;
     }
-
 #panel1,
 #panel2 {
   background: rgb(193, 255, 152);
@@ -28,6 +32,11 @@ background-image: linear-gradient(475deg, #070707 0%, #240370 37%, #432eff 100%)
 
 #panels {
   display: flex;
+}
+
+.fixed{
+    position:fixed;
+    bottom:0;
 }
          
 .circle {
@@ -63,7 +72,7 @@ background-image: linear-gradient(475deg, #070707 0%, #240370 37%, #432eff 100%)
 
       position: relative;;
       top:-90px;
-      left:-700%;
+      left:-500%;
       border-radius:50px;
       }     
 
@@ -265,7 +274,7 @@ h2 {
     <div class= "backgroundsquare"></div>
 <h1>"Everything starts from a dot." –Wassily Kandinsky</h1>
 <h2>Sharlene Deng</h2>
-
+<div class= "fixed">
 <button id="show1">dots!</button> <button id="hide1">dots! </button> <button id="toggle2">more dots!</button>
 
 <div id="panels">
@@ -277,7 +286,7 @@ h2 {
    these falling dots! 
   </div>
 </div>
-
+</div>
     <div id="move1"></div>
         <div class= "circle"></div>
     <div id="move2"
